@@ -1,0 +1,107 @@
+{
+  "weather": [
+    {"day": "Mon", "temp": "28°C"},
+    {"day": "Tue", "temp": "30°C"},
+    {"day": "Wed", "temp": "27°C"},
+    {"day": "Thu", "temp": "29°C"},
+    {"day": "Fri", "temp": "28°C"}
+  ],
+  "mandi": {
+    "current": 2450,
+    "unit": "₹/qtl",
+    "trend": {
+      "months": ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+      "values": [2000, 2300, 2450, 2400, 2600, 2550, 2500, 2620, 2710, 2680, 2750, 2800]
+    }
+  },
+  "climate": {
+    "months": ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+    "rainfall": [8,10,14,25,70,180,240,210,160,60,20,8],
+    "temp": [18,20,25,30,34,32,30,29,28,26,22,19]
+  },
+  "crops": [
+    {
+      "id": "wheat",
+      "season": "winter",
+      "water": "medium",
+      "soil": "loamy",
+      "sowing": "Nov–Dec",
+      "harvest": "Mar–Apr",
+      "companions": ["mustard","chickpea"],
+      "yield": "30 qtl/acre"
+    },
+    {
+      "id": "maize",
+      "season": "summer",
+      "water": "medium",
+      "soil": "sandy loam",
+      "sowing": "Jun–Jul",
+      "harvest": "Oct–Nov",
+      "companions": ["pigeon_pea","cowpea"],
+      "yield": "25 qtl/acre"
+    },
+    {
+      "id": "paddy",
+      "season": "kharif",
+      "water": "high",
+      "soil": "clay",
+      "sowing": "Jun–Jul",
+      "harvest": "Oct–Nov",
+      "companions": ["azolla","fish"],
+      "yield": "22 qtl/acre"
+    },
+    {
+      "id": "soybean",
+      "season": "kharif",
+      "water": "low",
+      "soil": "well-drained",
+      "sowing": "Jun",
+      "harvest": "Oct",
+      "companions": ["maize","sorghum"],
+      "yield": "12 qtl/acre"
+    },
+    {
+      "id": "cotton",
+      "season": "kharif",
+      "water": "medium",
+      "soil": "black cotton",
+      "sowing": "May–Jun",
+      "harvest": "Nov–Dec",
+      "companions": ["red_gram","sorghum"],
+      "yield": "8 qtl/acre"
+    },
+    {
+      "id": "chickpea",
+      "season": "rabi",
+      "water": "low",
+      "soil": "sandy loam",
+      "sowing": "Oct–Nov",
+      "harvest": "Feb–Mar",
+      "companions": ["wheat","mustard"],
+      "yield": "10 qtl/acre"
+    }
+  ],
+  "vendors": [
+    {
+      "name": "AgriSeeds (Seeds)",
+      "category": "seeds",
+      "phone": "+91 98765 43210",
+      "location": "Bhopal",
+      "verified": true
+    },
+    {
+      "name": "Fertilizer Depot",
+      "category": "fertilizers",
+      "phone": "+91 91234 56789",
+      "location": "Sehore",
+      "verified": true
+    },
+    {
+      "name": "Krishi Tools Mart",
+      "category": "tools",
+      "phone": "+91 99887 76655",
+      "location": "Raisen",
+      "verified": false
+    }
+  ]
+}

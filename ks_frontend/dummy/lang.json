@@ -1,0 +1,163 @@
+{
+  "en": {
+    "refresh": "Refresh",
+    "weather_forecast": "Weather Forecast",
+    "mandi_prices": "Mandi Prices",
+    "view_trends": "View Trends",
+    "advisory_tips": "Advisory Tips",
+    "quick_actions": "Quick Actions",
+    "voice": "Voice",
+    "emergency": "Emergency",
+    "download_tips": "Download Tips",
+    "settings": "Settings",
+    "recommended_crops": "Recommended Crops",
+    "crops": "Crops",
+    "vendors": "Vendors",
+    "analytics": "Analytics",
+    "mandi_trend": "Mandi Price Trend",
+    "climate_trend": "Rainfall & Temp",
+    "home": "Home",
+    "close": "Close",
+
+    "tips": [
+      "Water crops early morning and evening to reduce evaporation.",
+      "Use organic manure to improve soil health.",
+      "Check soil pH before sowing seeds.",
+      "During monsoon, apply fertilizer in small doses."
+    ],
+
+    "cropNames": {
+      "wheat": "Wheat",
+      "maize": "Maize",
+      "paddy": "Paddy",
+      "soybean": "Soybean",
+      "cotton": "Cotton",
+      "chickpea": "Chickpea",
+      "mustard": "Mustard",
+      "pigeon_pea": "Pigeon Pea",
+      "cowpea": "Cowpea",
+      "sorghum": "Sorghum",
+      "red_gram": "Red Gram",
+      "azolla": "Azolla",
+      "fish": "Fish"
+    },
+
+    "labels": {
+      "season": "Season",
+      "water": "Water",
+      "soil": "Soil",
+      "sowing": "Sowing",
+      "harvest": "Harvest",
+      "companions": "Companion Crops",
+      "yield": "Yield"
+    }
+  },
+
+  "hi": {
+    "refresh": "रीफ्रेश",
+    "weather_forecast": "मौसम पूर्वानुमान",
+    "mandi_prices": "मंडी भाव",
+    "view_trends": "रुझान देखें",
+    "advisory_tips": "सलाह",
+    "quick_actions": "त्वरित क्रिया",
+    "voice": "आवाज़",
+    "emergency": "आपातकाल",
+    "download_tips": "टिप डाउनलोड करें",
+    "settings": "सेटिंग्स",
+    "recommended_crops": "अनुशंसित फसलें",
+    "crops": "फसलें",
+    "vendors": "विक्रेता",
+    "analytics": "विश्लेषण",
+    "mandi_trend": "मंडी भाव रुझान",
+    "climate_trend": "वर्षा व तापमान",
+    "home": "होम",
+    "close": "बंद करें",
+
+    "tips": [
+      "सुबह व शाम सिंचाई करें — वाष्पीकरण कम होगा।",
+      "जैविक खाद का उपयोग करें, मिट्टी की सेहत सुधरेगी।",
+      "बीज बोने से पहले मिट्टी का pH जाँचें।",
+      "बरसात में खाद को छोटी-छोटी मात्रा में दें।"
+    ],
+
+    "cropNames": {
+      "wheat": "गेहूं",
+      "maize": "मकई",
+      "paddy": "धान",
+      "soybean": "सोयाबीन",
+      "cotton": "कपास",
+      "chickpea": "चना",
+      "mustard": "सरसों",
+      "pigeon_pea": "अरहर",
+      "cowpea": "लोबिया",
+      "sorghum": "ज्वार",
+      "red_gram": "तूर",
+      "azolla": "अज़ोला",
+      "fish": "मछली"
+    },
+
+    "labels": {
+      "season": "ऋतु",
+      "water": "पानी",
+      "soil": "मिट्टी",
+      "sowing": "बुवाई",
+      "harvest": "कटाई",
+      "companions": "सह फसल",
+      "yield": "उपज"
+    }
+  },
+
+  "mr": {
+    "refresh": "रिफ्रेश",
+    "weather_forecast": "हवामान अंदाज",
+    "mandi_prices": "बाजारभाव",
+    "view_trends": "कल पाहा",
+    "advisory_tips": "सलाह सूचना",
+    "quick_actions": "त्वरित क्रिया",
+    "voice": "आवाज",
+    "emergency": "आपत्काल",
+    "download_tips": "टिप डाउनलोड करा",
+    "settings": "सेटिंग्ज",
+    "recommended_crops": "शिफारस केलेली पिके",
+    "crops": "पिके",
+    "vendors": "विक्रेते",
+    "analytics": "विश्लेषण",
+    "mandi_trend": "बाजारभाव कल",
+    "climate_trend": "पर्जन्य व तापमान",
+    "home": "होम",
+    "close": "बंद करा",
+
+    "tips": [
+      "सकाळी व संध्याकाळी पाणी द्या — बाष्पीभवन कमी होईल.",
+      "सेंद्रिय खत वापरा, मातीचे आरोग्य सुधरेल.",
+      "बी पेरण्यापूर्वी मातीचा pH तपासा.",
+      "पावसाळ्यात खत कमी प्रमाणात, वारंवार द्या."
+    ],
+
+    "cropNames": {
+      "wheat": "गहू",
+      "maize": "मक्य",
+      "paddy": "तांदूळ",
+      "soybean": "सोयाबीन",
+      "cotton": "कापूस",
+      "chickpea": "हरभरा",
+      "mustard": "मोहरी",
+      "pigeon_pea": "तूर",
+      "cowpea": "चवळी",
+      "sorghum": "ज्वारी",
+      "red_gram": "अरहर",
+      "azolla": "अझोला",
+      "fish": "मासे"
+    },
+
+    "labels": {
+      "season": "हंगाम",
+      "water": "पाणी",
+      "soil": "माती",
+      "sowing": "पेरणी",
+      "harvest": "कापणी",
+      "companions": "सहपीके",
+      "yield": "उत्पन्न"
+    }
+  }
+}

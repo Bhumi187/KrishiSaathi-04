@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KrishiSaathi — Farmer Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Icons -->
+  <link rel="manifest" href="manifest.json" />
+  <!-- Chart.js for Analytics -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="brand">
+      <span class="sprout">🌱</span>
+      <span class="brand-text">KrishiSaathi</span>
+    </div>
+
+    <div class="top-actions">
+      <button id="btnRefresh" class="chip"><span>↻</span> <span data-i18n="refresh">Refresh</span></button>
+      <div class="chip ghost" id="chipWeather">⛅ <span id="topWeather">28°C</span></div>
+      <div class="chip ghost" id="chipMandi">₹ <span id="topMandi">2450/qtl</span></div>
+
+      <!-- Language -->
+      <div class="chip select">
+        <select id="langSelect" aria-label="Language">
+          <option value="en">English</option>
+          <option value="hi">हिंदी</option>
+          <option value="mr">मराठी</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- Greeting -->
+  <section class="hero">
+    <h1 id="greet">Good Morning, Farmer!</h1>
+  </section>
+
+  <!-- SCREENS -->
+  <main id="screens">
+
+    <!-- HOME -->
+    <section id="screen-home" class="screen">
+      <div class="grid-4">
+        <!-- Weather -->
+        <div class="card">
+          <div class="card-title">
+            <h3 data-i18n="weather_forecast">Weather Forecast</h3>
+            <div class="subtle" id="weatherCity">Bhopal, MP</div>
+          </div>
+          <div class="pills" id="weatherPills"></div>
+        </div>
+
+        <!-- Mandi -->
+        <div class="card">
+          <div class="card-title">
+            <h3 data-i18n="mandi_prices">Mandi Prices</h3>
+          </div>
+          <div class="stat">
+            <div class="stat-value" id="mandiBig">₹ 2450/qtl</div>
+            <button class="btn ghost" id="btnViewTrends" data-i18n="view_trends">View Trends</button>
+          </div>
+        </div>
+
+        <!-- Advisory -->
+        <div class="card" id="advisoryCard">
+          <div class="card-title">
+            <h3 data-i18n="advisory_tips">Advisory Tips</h3>
+          </div>
+          <div id="tipsWrap" class="tips"></div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="card">
+          <div class="card-title">
+            <h3 data-i18n="quick_actions">Quick Actions</h3>
+          </div>
+          <div class="actions">
+            <button class="btn success" id="btnVoice">🎙 <span data-i18n="voice">Voice</span></button>
+            <button class="btn danger" id="btnSOS">🚨 <span data-i18n="emergency">Emergency</span></button>
+            <button class="btn" id="btnDownload" title="Offline PDF">
+              ⬇ <span data-i18n="download_tips">Download Tips</span>
+            </button>
+            <button class="btn ghost" id="btnSettings">⚙ <span data-i18n="settings">Settings</span></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recommended Crops -->
+      <div class="card">
+        <div class="card-title">
+          <h3 data-i18n="recommended_crops">Recommended Crops</h3>
+        </div>
+        <div id="recommendedWrap" class="chips"></div>
+      </div>
+    </section>
+
+    <!-- CROPS -->
+    <section id="screen-crops" class="screen d-none">
+      <div class="section-title">
+        <h2>🌾 <span data-i18n="crops">Crops</span></h2>
+      </div>
+      <div id="allCrops" class="grid-4"></div>
+    </section>
+
+    <!-- VENDORS -->
+    <section id="screen-vendors" class="screen d-none">
+      <div class="section-title">
+        <h2>🛒 <span data-i18n="vendors">Vendors</span></h2>
+      </div>
+      <div id="vendorsList" class="list"></div>
+    </section>
+
+    <!-- ANALYTICS -->
+    <section id="screen-analytics" class="screen d-none">
+      <div class="section-title">
+        <h2>📊 <span data-i18n="analytics">Analytics</span></h2>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title"><h3 data-i18n="mandi_trend">Mandi Price Trend</h3></div>
+          <canvas id="chartMandi" height="130"></canvas>
+        </div>
+        <div class="card">
+          <div class="card-title"><h3 data-i18n="climate_trend">Rainfall & Temp</h3></div>
+          <canvas id="chartClimate" height="130"></canvas>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Bottom Nav -->
+  <nav class="tabbar">
+    <button class="tab active" data-screen="home">🏠 <span data-i18n="home">Home</span></button>
+    <button class="tab" data-screen="crops">🌾 <span data-i18n="crops">Crops</span></button>
+    <button class="tab" data-screen="vendors">🛒 <span data-i18n="vendors">Vendors</span></button>
+    <button class="tab" data-screen="analytics">📊 <span data-i18n="analytics">Analytics</span></button>
+  </nav>
+
+  <!-- Crop Modal -->
+  <dialog id="cropModal" class="modal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="cropTitle">Crop</h3>
+        <button id="closeModal" class="icon">✖</button>
+      </div>
+      <div class="modal-body" id="cropBody"></div>
+      <div class="modal-foot">
+        <button class="btn ghost" id="modalCloseBtn" data-i18n="close">Close</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
