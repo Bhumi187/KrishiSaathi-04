@@ -7,11 +7,53 @@
     {"day": "Fri", "temp": "28°C"}
   ],
   "mandi": {
-    "current": 2450,
-    "unit": "₹/qtl",
-    "trend": {
-      "months": ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
-      "values": [2000, 2300, 2450, 2400, 2600, 2550, 2500, 2620, 2710, 2680, 2750, 2800]
+    "wheat": {
+      "current": 2450,
+      "unit": "₹/qtl",
+      "trend": {
+        "months": ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+        "values": [2000, 2300, 2450, 2400, 2600, 2550, 2500, 2620, 2710, 2680, 2750, 2800]
+      }
+    },
+    "maize": {
+      "current": 2200,
+      "unit": "₹/qtl",
+      "trend": {
+        "months": ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+        "values": [1800, 1900, 2000, 2100, 2150, 2200, 2250, 2300, 2320, 2350, 2400, 2450]
+      }
+    },
+    "paddy": {
+      "current": 2800,
+      "unit": "₹/qtl",
+      "trend": {
+        "months": ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+        "values": [2500, 2600, 2700, 2800, 2900, 2950, 3000, 3050, 3080, 3100, 3150, 3200]
+      }
+    },
+    "soybean": {
+      "current": 3400,
+      "unit": "₹/qtl",
+      "trend": {
+        "months": ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+        "values": [3000, 3100, 3200, 3300, 3350, 3400, 3420, 3450, 3480, 3500, 3550, 3600]
+      }
+    },
+    "cotton": {
+      "current": 6200,
+      "unit": "₹/qtl",
+      "trend": {
+        "months": ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+        "values": [5800, 5900, 6000, 6100, 6150, 6200, 6220, 6250, 6280, 6300, 6350, 6400]
+      }
+    },
+    "chickpea": {
+      "current": 4600,
+      "unit": "₹/qtl",
+      "trend": {
+        "months": ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+        "values": [4200, 4300, 4400, 4500, 4550, 4600, 4620, 4650, 4680, 4700, 4750, 4800]
+      }
     }
   },
   "climate": {

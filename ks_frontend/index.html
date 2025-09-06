@@ -55,16 +55,21 @@
           <div class="pills" id="weatherPills"></div>
         </div>
 
-        <!-- Mandi -->
-        <div class="card">
-          <div class="card-title">
-            <h3 data-i18n="mandi_prices">Mandi Prices</h3>
-          </div>
-          <div class="stat">
-            <div class="stat-value" id="mandiBig">₹ 2450/qtl</div>
-            <button class="btn ghost" id="btnViewTrends" data-i18n="view_trends">View Trends</button>
-          </div>
-        </div>
+<!-- Mandi -->
+<div class="card">
+  <div class="card-title">
+    <h3 data-i18n="mandi_prices">Mandi Prices</h3>
+  </div>
+  <div class="stat">
+    <div>
+      <label for="mandiSelect" style="font-size:0.9em;">Select Crop:</label>
+      <select id="mandiSelect"></select>
+    </div>
+    <div class="stat-value" id="mandiBig">₹ 2450/qtl</div>
+    <button class="btn ghost" id="btnViewTrends" data-i18n="view_trends">View Trends</button>
+  </div>
+</div>
+
 
         <!-- Advisory -->
         <div class="card" id="advisoryCard">
